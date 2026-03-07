@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #fff;
+    color: #111;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: black;
+    color: gold;
+}
+
+nav a {
+    color: gold;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4); /* soft black transparency */
+}
+
+.hero h1, .hero p, .hero button {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Featured Collection */
+.featured {
+    text-align: center;
+    padding: 50px;
+}
+
+.featured h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+    color: #111;
+}
+
+.card p {
+    color: gold;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: gold;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer .socials a {
+    color: gold;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About Page */
+.about {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
+.products-page {
+    text-align: center;
+    padding: 50px;
+}
+
+.products-page h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.products-page .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.products-page .card {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.products-page .card:hover {
+    transform: translateY(-10px);
+}
+
+.products-page .card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.products-page .card h3 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+    color: #111;
+}
+
+.products-page .card p {
+    color: gold;
+    font-weight: bold;
+}
+
