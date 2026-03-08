@@ -24,56 +24,57 @@ nav a {
 
 /* Hero Section */
 .hero {
-    position: relative;
-    height: 80vh;
-    background: url('../images/hero.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-    padding-top: 200px;
+  position: relative;
+  height: 100vh; /* full viewport height */
+  background: url('../images/hero.jpg') no-repeat center center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers vertically */
+  align-items: center;     /* centers horizontally */
+  text-align: center;
 }
+
 
 .hero::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.4); /* soft black transparency */
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 0; /* keep overlay behind */
 }
 
-.hero h1, .hero p, .hero button {
-    position: relative;
-    z-index: 1;
+.hero h1, 
+.hero p, 
+.hero .hero-btn {
+  position: relative;
+  z-index: 1; /* keep text and button above overlay */
+  left: 30px; /* small nudge to the right */
 }
 
 .hero h1 {
     font-size: 50px;
+    
 }
 
-.hero button {
-    padding: 10px 20px;
-    background: gold;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+.hero-btn {
+  display: inline-block;   /* ensures it behaves like a button */
+  padding: 12px 24px;
+  background: gold;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s ease;
 }
 
-/* Featured Collection */
-.featured {
-    text-align: center;
-    padding: 50px;
+.hero-btn:hover {
+  background: black;
+  color: gold;
 }
 
-.featured h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: black;
-}
-
-.products {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
 
 .card {
     width: 250px;
@@ -110,7 +111,7 @@ footer {
     color: gold;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 0;
 }
 
 footer .socials a {
@@ -179,4 +180,146 @@ footer .socials a {
     color: gold;
     font-weight: bold;
 }
+#trustees {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
 
+.trustees {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.trustees div {
+  width: 150px;
+}
+
+.trustees img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.trustees p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+marquee {
+  background: gold;
+  color: black;
+  font-weight: bold;
+  margin: 0;       /* removes default spacing */
+  padding: 4px;    /* smaller padding so it hugs the hero */
+  display: block;  /* ensures it aligns neatly */
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: white;
+}
+nav a.active {
+  color: white;
+  border-bottom: 2px solid gold;
+}
+
+.trustees img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .products, .trustees {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Hero text resize */
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+
+
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input:focus, form textarea:focus {
+  border-color: gold;
+  outline: none;
+  box-shadow: 0 0 5px rgba(218,165,32,0.5);
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: black;
+  color: gold;
+}
+form input:focus, form textarea:focus {
+  border-color: gold;
+  outline: none;
+  box-shadow: 0 0 5px rgba(218,165,32,0.5); /* gold glow */
+}
+.events {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+.events ul {
+  list-style: none;
+  padding: 0;
+}
+.events li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+#countdown {
+  font-size: 24px;
+  color: gold;
+  margin-top: 20px;
+}
+
+.logo {
+  font-size: 28px;        /* bigger */
+  font-weight: 900;       /* extra bold */
+  color: gold;
+  letter-spacing: 2px;    /* spacing for elegance */
+  text-transform: uppercase;
+  font-family: 'Georgia', serif; /* matches your brand style */
+}
