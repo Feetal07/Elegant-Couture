@@ -123,16 +123,34 @@ footer .socials a {
 
 /* About Page */
 .about {
-    max-width: 800px;
-    margin: 50px auto;
-    text-align: center;
-    line-height: 1.6;
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+  line-height: 1.8;
+  background: linear-gradient(to bottom, #fff, #fdf5e6); /* ivory fade */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: black;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: black;
+  letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
+  position: relative;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: gold;
+  margin: 10px auto 0;
+}
+
 }
 .products-page {
     text-align: center;
@@ -293,27 +311,75 @@ form input:focus, form textarea:focus {
   box-shadow: 0 0 5px rgba(218,165,32,0.5); /* gold glow */
 }
 .events {
-  max-width: 800px;
-  margin: 50px auto;
+  max-width: 900px;
+  margin: 60px auto;
   text-align: center;
+  padding: 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+.events h1, .events h2 {
+  font-family: 'Playfair Display', serif;
+  color: black;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.events h1::after, .events h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: gold;
+  margin: 10px auto 0;
+}
+
 .events ul {
   list-style: none;
   padding: 0;
 }
+
 .events li {
   background: #f9f9f9;
-  margin: 10px 0;
-  padding: 15px;
-  border-radius: 6px;
+  margin: 12px 0;
+  padding: 18px;
+  border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   font-weight: bold;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
+
+.events li:hover {
+  transform: scale(1.02);
+  background: #fff8dc; /* subtle gold tint */
+}
+
 #countdown {
-  font-size: 24px;
-  color: gold;
-  margin-top: 20px;
+  font-size: 26px;
+  color: black;
+  margin-top: 25px;
+  font-weight: bold;
+  border: 2px solid gold;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #fff8dc; /* soft gold tint */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+#countdown {
+  animation: pulse 2s infinite;
+}
+
 
 .logo {
   font-size: 28px;        /* bigger */
@@ -337,30 +403,30 @@ form input:focus, form textarea:focus {
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
-
 .trustees .member img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 10px;
+  border: 3px solid gold;
+  transition: transform 0.3s ease;
 }
 
-.trustees .member:hover {
-  transform: scale(1.05);
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.trustees .member:hover img {
+  transform: scale(1.1);
 }
+
 .trustees .member-name {
-  white-space: nowrap;   /* keeps the name on one line */
   font-weight: bold;
+  color: black;
+  margin-top: 8px;
 }
 
 .trustees .member-title {
-  margin-top: 5px;
-  color: #555;
+  color: #8b0000; /* deep burgundy accent */
   font-style: italic;
 }
+
 
 .trustees .member-reg {
   margin-top: 3px;
@@ -386,4 +452,3 @@ form input:focus, form textarea:focus {
     grid-template-columns: 1fr; /* 1 per row on very small screens */
   }
 }
-
