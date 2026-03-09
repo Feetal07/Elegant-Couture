@@ -323,3 +323,51 @@ form input:focus, form textarea:focus {
   text-transform: uppercase;
   font-family: 'Georgia', serif; /* matches your brand style */
 }
+.trustees {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Always 5 per row */
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.trustees .member {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.trustees .member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.trustees .member:hover {
+  transform: scale(1.05);
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .trustees {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .trustees {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on phones */
+  }
+}
+
+@media (max-width: 400px) {
+  .trustees {
+    grid-template-columns: 1fr; /* 1 per row on very small screens */
+  }
+}
+
