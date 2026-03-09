@@ -351,6 +351,22 @@ form input:focus, form textarea:focus {
   background: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+.trustees .member-name {
+  white-space: nowrap;   /* keeps the name on one line */
+  font-weight: bold;
+}
+
+.trustees .member-title {
+  margin-top: 5px;
+  color: #555;
+  font-style: italic;
+}
+
+.trustees .member-reg {
+  margin-top: 3px;
+  font-size: 0.9em;
+  color: #777;
+}
 
 /* Responsive tweaks */
 @media (max-width: 1024px) {
