@@ -4,6 +4,9 @@
 Elegant Couture is a fashion house website developed for CSC 106 Lab Assessment.  
 It includes 5 pages: Home, About (with Board of Trustees), Products, Contact, and Events.
 
+## 🚀 Live Demo
+Visit the site here: [Elegant Couture](https://feetal07.github.io/Elegant-Couture/)
+
 ## Features
 - Product showcase
 - Board of Trustees (group members)
@@ -13,6 +16,12 @@ It includes 5 pages: Home, About (with Board of Trustees), Products, Contact, an
 - External CSS styling
 - JavaScript features (form validation, countdown timer)
 - Consistent navigation across all pages
+
+## 🛠️ Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- GitHub Pages
 
 ## DOM Structure
 
@@ -106,10 +115,14 @@ html
 
 ## Credits
 - Developed by CSC 106 Lab Assessment Group 8
-
 ### Board of Trustees
-- Lateef Afolabi – Lead Developer / Project Coordinator
-- [Member Name] – Frontend Designer
-- [Member Name] – Backend Developer
-- [Member Name] – Content & Documentation
-- [Member Name] – Quality Assurance & Testing
+1. Lateef Afolabi – Chairperson (Reg. No: 30144328)
+2. [Member 2] – Vice Chairperson (Reg. No: CSC106/002)
+3. Marylyn Oladipo – Secretary (Reg. No: 301818837)
+4. Elumalero Igbasan – Treasurer (Reg. No: CSC106/004)
+5. Nwankwo Ujunwa – Trustee of Events (Reg. No: 301812344)
+6. Chisom Nnamani – Trustee of Outreach (Reg. No: 301815312)
+7. [Member 7] – Trustee of Research (Reg. No: …)
+8. [Member 8] – Trustee of Communication (Reg. No: CSC106/008)
+9. [Sonia Kalu] – Trustee of Quality Assurance (Reg. No: 301835409)
+10. Aluko Michael – Trustee of Innovation (Reg. No: 301804326)
