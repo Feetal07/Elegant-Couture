@@ -391,11 +391,10 @@ form input:focus, form textarea:focus {
 }
 .trustees {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Always 5 per row */
+  grid-template-columns: repeat(4, 1fr); /* 4 per row */
   gap: 20px;
   margin: 40px 0;
 }
-
 .trustees .member {
   text-align: center;
   background: #f9f9f9;
@@ -420,8 +419,9 @@ form input:focus, form textarea:focus {
   font-weight: bold;
   color: black;
   margin-top: 8px;
+  white-space: normal;   /* allow wrapping if needed */
+  word-break: break-word; /* break long names nicely if too wide */
 }
-
 .trustees .member-title {
   color: #8b0000; /* deep burgundy accent */
   font-style: italic;
