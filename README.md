@@ -50,10 +50,16 @@ html
      ├── marquee
      ├── section.about
      ├── section.trustees
-     │    ├── div.member
-     │    │    ├── img
-     │    │    └── p (name/role)
+     │    ├── div.member (Lateef Afolabi – Chairperson)
+     │    ├── div.member (Marylyn Oladipo – Secretary)
+     │    ├── div.member (Elumalero Igbasan – Treasurer)
+     │    ├── div.member (Nwankwo Ujunwa – Trustee of Events)
+     │    ├── div.member (Chisom Nnamani – Trustee of Outreach)
+     │    ├── div.member (Sonia Kalu – Trustee of Quality Assurance)
+     │    ├── div.member (Aluko Michael – Trustee of Innovation)
+     │    └── div.member (Olasunkami Iyiola – Trustee of Communication)
      └── footer
+
 ```
 
 ### Products (products.html)
@@ -117,12 +123,11 @@ html
 - Developed by CSC 106 Lab Assessment Group 8
 ### Board of Trustees
 1. Lateef Afolabi – Chairperson (Reg. No: 30144328)
-2. [Member 2] – Vice Chairperson (Reg. No: CSC106/002)
-3. Marylyn Oladipo – Secretary (Reg. No: 301818837)
-4. Elumalero Igbasan – Treasurer (Reg. No: CSC106/004)
-5. Nwankwo Ujunwa – Trustee of Events (Reg. No: 301812344)
-6. Chisom Nnamani – Trustee of Outreach (Reg. No: 301815312)
-7. [Member 7] – Trustee of Research (Reg. No: …)
-8. [Member 8] – Trustee of Communication (Reg. No: CSC106/008)
-9. [Sonia Kalu] – Trustee of Quality Assurance (Reg. No: 301835409)
-10. Aluko Michael – Trustee of Innovation (Reg. No: 301804326)
+2. Marylyn Oladipo – Secretary (Reg. No: 301818837)
+3.Elumalero Igbasan – Treasurer (Reg. No: 301818782)
+4.Nwankwo Ujunwa – Trustee of Events (Reg. No: 301812344)
+5. Chisom Nnamani – Trustee of Outreach (Reg. No: 301815312)
+6. [Sonia Kalu] – Trustee of Quality Assurance (Reg. No: 301835409)
+7.Aluko Michael – Trustee of Innovation (Reg. No: 301804326)
+8. [Member 8] – Olasunkami Iyiola – Trustee of Communication (Reg. No:  301825619)
+
